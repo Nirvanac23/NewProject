@@ -1,0 +1,88 @@
+.company {
+  width: 100%;
+  height: 500px;
+  background-color: black;
+}
+
+.company__one {
+  position: relative;
+  text-align: center;
+  margin-top: 100px;
+}
+
+.company__one h2 {
+  color: white;
+  text-transform: uppercase;
+  padding-top: 20px;
+}
+
+.company__one h2::after {
+  content: "";
+  background-color: orange;
+  width: 5%;
+  height: 5px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  position: absolute;
+  left: 50%;
+  -webkit-transform: translate(-50%);
+          transform: translate(-50%);
+  margin-top: 15px;
+  border-radius: 90px;
+}
+
+.company__one::after {
+  content: "";
+  position: absolute;
+  background-color: black;
+  width: 100%;
+  height: 100px;
+  left: 0;
+  right: 0;
+  top: -50px;
+  -webkit-transform: skewy(-2deg);
+          transform: skewy(-2deg);
+  z-index: -1;
+}
+
+.company__two {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-top: 100px;
+}
+
+.company__two-left, .company__two-right {
+  padding: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.company__two-left1, .company__two-right1 {
+  text-align: center;
+}
+
+.company__two-left1 img, .company__two-right1 img {
+  width: 100%;
+}
+
+.company__two-left2, .company__two-right2 {
+  padding-left: 40px;
+}
+
+.company__two-left2 p, .company__two-right2 p {
+  color: white;
+  font-family: "Quicksand", sans-serif;
+}
+/*# sourceMappingURL=company.css.map */

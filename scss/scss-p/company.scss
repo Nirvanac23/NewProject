@@ -1,0 +1,68 @@
+.company {
+    width: 100%;
+    height: 500px;
+    background-color: black;
+    &__one {
+        position: relative;
+        text-align: center;
+        margin-top: 100px;
+        h2 {
+            color: white;
+            text-transform: uppercase;
+            padding-top: 20px;
+        }
+        h2::after {
+            content: "";
+            background-color: orange;
+            width: 5%;
+            height: 5px;
+            display: flex;
+            justify-content: center;
+            position: absolute;
+            left: 50%;
+            transform: translate(-50%);
+            margin-top: 15px;
+            border-radius: 90px;
+        }
+    }
+    &__one::after {
+        content: "";
+        position: absolute;
+        background-color: black;
+        width: 100%;
+        height: 100px;
+        left: 0;
+        right: 0;
+        top: -50px;
+        transform: skewy(-2deg);
+        z-index: -1;
+    }
+    &__two {
+        display: flex;
+        justify-content: center;
+        margin-top: 100px;
+        &-left,
+        &-right {
+            padding: 10px;
+            display: flex;
+            justify-content: center;
+        }
+        &-left1,
+        &-right1 {
+            text-align: center;
+            img {
+                width: 100%;
+                
+            }
+        }
+
+        &-left2,
+        &-right2 {
+            padding-left: 40px;
+            p {
+                color: white;
+                font-family: "Quicksand", sans-serif;
+            }
+        }
+    }
+}
