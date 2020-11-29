@@ -1,70 +1,47 @@
-header {
-
-    .hed {
-        z-index: 600;
-        position: fixed;
-        top: 0;
-        left: 50%;
-        transform: translate(-50%);
-        margin-top: 20px;
-        padding: 20px;
-        background-color: transparent;
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        &__logo {
-            flex: 1;
-            h1 {
-                color: whitesmoke;
-                text-transform: uppercase;
-                font-family: "Capriola", sans-serif;
-                font-style: italic;
-                margin: 0;
-                font-weight: 800;
-            }
+.hed{
+    position: absolute;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: orange;
+    padding: 5px 130px;
+    z-index: 600;
+    left: 50%;
+    transform: translate(-50%);
+    margin-top: 40px;
+    &__logo{
+        h1{
+            text-transform: uppercase;
+            font-weight: 800;
+            font-style: italic;
+            margin: 0;
         }
-        &__menu {
-            padding: 8px 0;
-            display: flex;
-            flex: 1;
-            list-style-type: none;
-            background-color: rgb(253, 204, 43);
-            display: flex;
-            justify-content: flex-end;
-          
-            &-list {
-                list-style-type: none;
-                margin: 0;
-                li {
-                    padding: 0 20px;
-                    a {
-                        color: black;
-                        font-weight: bold;
-                        text-decoration: none;
-                        text-transform: uppercase;
-                        margin: 0;
-                        white-space: nowrap;
-                    }
-                    a:hover{
-                        color: orange;
-                        font-weight: bolder;
-                    }
-                }
-            }
-        }
-        &__menu:after{
-            content: '';
-            background-color: rgb(253, 204, 43);
-            width: 100%;
-            height: 46%;
-            position: absolute;
-            right: -400px;
-            z-index: -1;
-            display: flex;
-            top: 27%;
-        }
-
-        }
-
     }
-
+    &__menu{
+        &-list{
+            list-style-type: none;
+            margin: 0;
+            li{
+            padding: 0 10px;
+            margin: 0;
+            a{
+                color: black;
+                font-weight: 700;
+                text-decoration: none;
+                font-size: 17px;
+            }
+            }
+        }
+    }
+}
+.hed::before{
+    content: '';
+    width: 105%;
+    height: 100%;
+    background-color: orange;
+    display: block;
+    position: absolute;
+    z-index: -1;
+    left: -2.5%;
+    transform: skew(-25deg);
+}

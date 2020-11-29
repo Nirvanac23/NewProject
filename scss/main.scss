@@ -1,8 +1,11 @@
 
 @import 'scss-p/header.scss';
-@import 'scss-p/footer.scss';
-@import 'scss-p/midle.scss';
-@import 'scss-p/cert.scss';
-@import 'scss-p/company.scss';
+/*@import 'scss-p/footer.scss';*/
+/*@import 'scss-p/midle.scss';*/
+/*@import 'scss-p/cert.scss';*/
+/*@import 'scss-p/company.scss';*/
 @import 'scss-p/owlscss.scss';
 @import 'scss-p/footer.scss';
+body{
+    overflow-x: hidden;
+}
