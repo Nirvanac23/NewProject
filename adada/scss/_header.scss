@@ -1,0 +1,94 @@
+// Header section
+.header {
+  width: 1280px;
+  left: 50%;
+  transform: translateX(-50%);
+
+  &__top {
+    text-align: right;
+    margin: 10px 0;
+  }
+
+  &__bottom {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .social-media {
+    li {
+      display: inline-block;
+    }
+
+    a {
+      margin: 0 10px;
+      font-size: 18px;
+      color: white;
+
+      &:hover {
+        color: $blueColor;
+      }
+    }
+  }
+
+  .logo {
+    width: $logoWidth;
+
+    a {
+      display: inline-block;
+      text-decoration: none;
+    }
+
+    h1 {
+      margin: 0;
+      font-size: 36px;
+      text-transform: uppercase;
+      font-weight: 100;
+      color: white;
+    }
+  }
+
+  .navigation {
+    position: relative;
+    width: calc(100% - #{$logoWidth});
+
+    // First level navigation
+    > ul {
+      display: flex;
+      justify-content: flex-end;
+      height: 100%;
+      align-items: center;
+    }
+
+    li {
+      margin: 0 15px;
+
+      // Second level navigation
+      ul {
+        display: none;
+      }
+    }
+
+    a {
+      font-size: 20px;
+      text-decoration: none;
+      color: $blackColor;
+
+      &:hover {
+        color: white;
+      }
+    }
+
+    &::after {
+      display: block;
+      position: absolute;
+      width: 9999px;
+      height: 100%;
+      left: 0;
+      top: 0;
+      background-color: $yellowColor;
+      transform: skew(-25deg);
+      z-index: -1;
+      content: '';
+    }
+  }
+}

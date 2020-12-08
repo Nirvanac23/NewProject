@@ -1,0 +1,15 @@
+{
+  "name": "masters-new",
+  "version": "1.0.0",
+  "description": "New static HTML website for the Masters project",
+  "main": "index.js",
+  "dependencies": {
+    "node-sass": "^4.14.1"
+  },
+  "scripts": {
+    "test": "test",
+    "scss": "node-sass -w scss/main.scss css/main.css --output-style compressed"
+  },
+  "author": "Fortpix",
+  "license": "ISC"
+}

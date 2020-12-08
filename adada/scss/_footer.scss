@@ -1,0 +1,41 @@
+// Footer section
+.footer {
+  width: 100%;
+  padding: 10px 20px 0;
+  color: white;
+  background: rgba(4, 30, 66, 0.8);
+
+  &__wrapper {
+    width: 1280px;
+    margin: 0 auto;
+  }
+
+  &__top {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 6px;
+  }
+
+  .address {
+    position: relative;
+    padding-left: 30px;
+    font-size: 18px;
+
+    i {
+      position: absolute;
+      top: 0;
+      left: 0;
+    }
+
+    p {
+      margin: 0;
+    }
+  }
+
+  .copyright {
+    padding: 8px 0;
+    text-align: center;
+    font-size: 13px;
+    border-top: 1px solid white;
+  }
+}
