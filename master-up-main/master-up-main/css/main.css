@@ -1,0 +1,208 @@
+.hed {
+  position: absolute;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: orange;
+  padding: 5px 130px;
+  z-index: 600;
+  left: 50%;
+  transform: translate(-50%);
+  margin-top: 40px; }
+  .hed__logo h1 {
+    text-transform: uppercase;
+    font-weight: 800;
+    font-style: italic;
+    margin: 0; }
+  .hed__menu-list {
+    list-style-type: none;
+    margin: 0; }
+    .hed__menu-list li {
+      padding: 0 10px;
+      margin: 0; }
+      .hed__menu-list li a {
+        color: black;
+        font-weight: 700;
+        text-decoration: none;
+        font-size: 17px; }
+
+.hed::before {
+  content: '';
+  width: 105%;
+  height: 100%;
+  background-color: orange;
+  display: block;
+  position: absolute;
+  z-index: -1;
+  left: -2.5%;
+  transform: skew(-25deg); }
+
+/*@import 'scss-p/footer.scss';*/
+/*@import 'scss-p/midle.scss';*/
+/*@import 'scss-p/cert.scss';*/
+/*@import 'scss-p/company.scss';*/
+.owl {
+  overflow: hidden;
+  position: relative;
+  height: 100%; }
+  .owl__figure {
+    height: 100%;
+    display: flex;
+    position: relative; }
+  .owl__image {
+    object-fit: cover;
+    display: flex;
+    width: 100%;
+    height: 800px; }
+  .owl__figcaption {
+    z-index: 500;
+    color: white;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    margin: 0; }
+  .owl__figure--centralimg {
+    align-items: flex-end;
+    display: flex; }
+  .owl__description-main {
+    font-size: 50px;
+    font-weight: 700;
+    margin-bottom: 20px;
+    letter-spacing: 2px;
+    color: white; }
+  .owl__description-text {
+    font-size: 20px;
+    font-weight: bold;
+    letter-spacing: 1.5px; }
+  .owl__opacity {
+    background-color: rgba(0, 0, 0, 0.2);
+    padding: 20px; }
+
+.owl-carousel {
+  position: relative;
+  height: 100%; }
+
+.contact {
+  overflow: hidden; }
+  .contact__button {
+    width: 150px;
+    height: 60px;
+    background-color: #fdcc2b;
+    position: fixed;
+    right: 0;
+    top: 50%;
+    transform: translatey(-50%) translateX(50%) rotate(-90deg);
+    z-index: 700;
+    border-radius: 15px;
+    display: flex;
+    justify-content: center; }
+    .contact__button a {
+      font-size: 22px;
+      font-weight: 600;
+      color: white !important; }
+    .contact__button:hover {
+      width: 200px;
+      height: 80px;
+      transition: 0.5s; }
+  .contact__div {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    background-color: black;
+    color: white;
+    z-index: 600;
+    opacity: 0.9;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    display: none; }
+  .contact__item {
+    padding: 80px 0; }
+    .contact__item i {
+      color: #fdcc2b;
+      font-size: 40px; }
+    .contact__item a {
+      font-size: 40px;
+      font-weight: bold;
+      color: white;
+      padding-left: 20px; }
+      .contact__item a:hover {
+        text-decoration: none; }
+    .contact__item p {
+      letter-spacing: 1.5px;
+      font-size: 20px; }
+
+.owl-nav,
+.owl-dots {
+  display: none; }
+
+.foot {
+  position: relative;
+  display: flex;
+  background-color: #1a2930; }
+  .foot__phone {
+    flex: 1;
+    text-align: center; }
+    .foot__phone a {
+      color: white;
+      display: block;
+      padding: 2px 0; }
+  .foot__email {
+    flex: 1;
+    text-align: center; }
+    .foot__email a {
+      display: block;
+      padding-top: 10px;
+      color: white; }
+  .foot__adress {
+    flex: 1;
+    text-align: center; }
+    .foot__adress a {
+      display: block;
+      padding-top: 10px;
+      color: white; }
+  .foot__social {
+    display: flex;
+    flex: 1;
+    text-align: center; }
+    .foot__social a {
+      padding: 10px;
+      flex: 1; }
+      .foot__social a i {
+        color: orange;
+        font-size: 18px; }
+  .foot #info {
+    margin: 0;
+    color: white; }
+    .foot #info i {
+      color: orange;
+      padding: 0 10px;
+      font-size: 18px; }
+
+.foot::after {
+  content: '';
+  width: 100%;
+  height: 100%;
+  background-color: #1a2930;
+  transform: translate(-50%);
+  position: absolute;
+  z-index: -1; }
+
+.foot::before {
+  content: '';
+  width: 100%;
+  height: 100%;
+  background-color: #1a2930;
+  transform: translate(50%);
+  position: absolute;
+  z-index: -1; }
+
+body {
+  overflow-x: hidden; }

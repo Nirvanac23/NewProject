@@ -1,0 +1,149 @@
+@media screen and (max-width: 600px) {
+  .mobile {
+    width: 100%;
+  }
+  .mobile__header {
+    background-color: #161616;
+    position: relative;
+    z-index: -2;
+  }
+  .mobile__logo h1 {
+    padding: 10px;
+    font-size: 32px;
+    color: white;
+    z-index: 999;
+    display: inline-flex;
+    background-color: #161616;
+  }
+  .mobile__logo h1:after {
+    content: "";
+    background-color: #ffdc3e;
+    width: 100%;
+    height: 8px;
+    display: flex;
+    position: absolute;
+    left: 0px;
+    top: 28px;
+    z-index: -1;
+  }
+  .mobile__menu {
+    height: 100%;
+    position: relative;
+  }
+  .mobile__figure {
+    height: 150px;
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+    margin: 0;
+    border-bottom: 1px solid white;
+  }
+  .mobile__figure img {
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    object-fit: cover;
+  }
+  .mobile__figcaption {
+    position: absolute;
+    left: 0;
+    top: 50%;
+    z-index: 999;
+    width: 100%;
+    transform: translatey(-50%);
+    display: flex;
+    justify-content: space-between;
+    padding: 0 20px;
+  }
+  .mobile .one {
+    background-color: black;
+    z-index: 500;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0.7;
+  }
+  .mobile__item {
+    color: white !important;
+    font-size: 17px;
+    font-weight: bold;
+    margin: 0;
+    display: flex;
+    align-items: center;
+  }
+  .mobile__button {
+    padding: 10px 20px;
+    display: block;
+    border: 1px solid white;
+    color: white !important;
+  }
+  .mobile__naslov {
+    text-align: center;
+    padding: 40px 40px;
+    width: 100%;
+  }
+  .mobile__naslov h2 {
+    font-size: 28px;
+    color: #3f3f3f;
+    margin-bottom: 20px;
+    position: relative;
+  }
+  .mobile__naslov h2:after {
+    content: "";
+    position: absolute;
+    width: 100px;
+    height: 3px;
+    background-color: #ffdc3e;
+    display: flex;
+    left: 50%;
+    top: 110px;
+    transform: translatex(-50%);
+    justify-content: center;
+    align-items: center;
+  }
+  .mobile__naslov p {
+    color: #646464;
+  }
+  .mobile__contact {
+    color: white;
+    display: flex;
+    width: 100%;
+  }
+  .mobile__phone {
+    flex-grow: 1;
+    display: flex;
+    justify-content: center;
+  }
+  .mobile__phone a {
+    font-size: 17px;
+    padding: 10px 0;
+    display: flex;
+  }
+  .mobile__mail {
+    flex-grow: 1;
+    display: flex;
+    justify-content: center;
+  }
+  .mobile__mail a {
+    font: 17px;
+    padding: 10px 0;
+    display: flex;
+  }
+  .mobile__adress {
+    flex-grow: 1;
+    display: flex;
+    justify-content: center;
+  }
+  .mobile__adress a {
+    font-size: 17px;
+    padding: 10px 0;
+    display: flex;
+  }
+
+  header,
+section,
+footer {
+    display: none;
+  }
+}

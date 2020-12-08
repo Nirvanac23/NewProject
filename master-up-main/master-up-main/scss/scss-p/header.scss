@@ -1,0 +1,48 @@
+.hed {
+    width: 75%;
+    position: fixed;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px 130px;
+    z-index: 600;
+    left: 50%;
+    transform: translate(-50%);
+    margin-top: 10px;
+    &__logo {
+        h1 {
+            color: gray;
+            text-transform: uppercase;
+            font-weight: bolder;
+            font-style: italic;
+            margin: 0;
+        }
+    }
+    &__menu {
+        &-list {
+            list-style-type: none;
+            margin: 0;
+            li {
+                padding: 0 10px;
+                margin: 0;
+                a {
+                    color: black;
+                    font-weight: 700;
+                    text-decoration: none;
+                    font-size: 17px;
+                }
+            }
+        }
+    }
+}
+.hed::before {
+    content: '';
+    width: 105%;
+    height: 100%;
+    background-color: rgba(233, 216, 64, 0.9);
+    display: block;
+    position: absolute;
+    z-index: -1;
+    left: -2.5%;
+    transform: skew(-25deg);
+}
