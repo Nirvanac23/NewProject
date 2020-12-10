@@ -1,0 +1,443 @@
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html,
+body {
+  padding: 0;
+  margin: 0;
+}
+
+ul {
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+}
+
+a, button {
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.fixed {
+  position: fixed;
+  z-index: 999999;
+}
+
+.fixed.top {
+  top: 0;
+}
+
+.fixed.bottom {
+  bottom: 0;
+}
+
+.button {
+  padding: 10px 20px;
+  font-size: 16px;
+  color: white;
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+
+.button__wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 20px;
+}
+
+.button__wrapper button {
+  margin: 0 10px;
+}
+
+.button__wrapper button:first-child {
+  margin-left: 0;
+}
+
+.button__wrapper button:last-child {
+  margin-right: 0;
+}
+
+.button.primary {
+  background: #ffc31d;
+}
+
+.button.primary:hover {
+  background: #041e42;
+}
+
+.button.secondary {
+  background: #041e42;
+}
+
+.button.secondary:hover {
+  background: #ffc31d;
+}
+
+.carousel__wrapper {
+  overflow: hidden;
+}
+
+.carousel__wrapper .item {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+}
+
+.carousel__wrapper .item::before {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.3);
+  z-index: 1;
+  content: '';
+}
+
+.carousel__wrapper .item__wrapper {
+  position: absolute;
+  top: 47%;
+  left: 50%;
+  color: white;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  z-index: 2;
+}
+
+.carousel__wrapper .item h2 {
+  margin: 0 0 20px;
+  font-size: 50px;
+}
+
+.carousel__wrapper .item p {
+  font-size: 20px;
+}
+
+.carousel__wrapper .item-1 {
+  background-image: url("http://walls-wp.themegum.com/wp-content/uploads/2017/07/slide-1-1.jpg");
+}
+
+.carousel__wrapper .item-2 {
+  background-image: url("http://walls-wp.themegum.com/wp-content/uploads/2017/07/slide-2-1.jpg");
+}
+
+.carousel__wrapper .item-3 {
+  background-image: url("http://walls-wp.themegum.com/wp-content/uploads/2017/07/slide-1-1.jpg");
+}
+
+.carousel__wrapper .certificate__wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-bottom: 60px;
+  width: 100%;
+}
+
+.carousel__wrapper .certificate__wrapper img {
+  max-width: 105px;
+}
+
+.carousel__wrapper .owl-item .item__wrapper {
+  height: 67vh;
+  width: 65%;
+}
+
+.carousel__wrapper .owl-item .item__wrapper > * {
+  opacity: 0;
+  position: relative;
+  top: 30px;
+  -webkit-transition-duration: 0.9s;
+          transition-duration: 0.9s;
+  -webkit-transition-property: all;
+  transition-property: all;
+  -webkit-transition-timing-function: ease;
+          transition-timing-function: ease;
+}
+
+.carousel__wrapper .owl-item .certificate__wrapper {
+  position: static;
+}
+
+.carousel__wrapper .owl-item .certificate__wrapper img {
+  position: relative;
+  top: 0;
+  left: 100%;
+  -webkit-transition-duration: 0.9s;
+          transition-duration: 0.9s;
+  -webkit-transition-property: all;
+  transition-property: all;
+  -webkit-transition-timing-function: ease;
+          transition-timing-function: ease;
+}
+
+.carousel__wrapper .owl-item.active .item__wrapper > * {
+  top: 0;
+  opacity: 1;
+  -webkit-transition-delay: 0.4s;
+          transition-delay: 0.4s;
+}
+
+.carousel__wrapper .owl-item.active .certificate__wrapper img {
+  left: 0;
+}
+
+.carousel__wrapper .owl-item.active .certificate__wrapper img:nth-of-type(1) {
+  -webkit-transition-delay: 0.4s;
+          transition-delay: 0.4s;
+}
+
+.carousel__wrapper .owl-item.active .certificate__wrapper img:nth-of-type(2) {
+  -webkit-transition-delay: 0.5s;
+          transition-delay: 0.5s;
+}
+
+.carousel__wrapper .owl-item.active .certificate__wrapper img:nth-of-type(3) {
+  -webkit-transition-delay: 0.6s;
+          transition-delay: 0.6s;
+}
+
+.carousel__wrapper .owl-item.active .certificate__wrapper img:nth-of-type(4) {
+  -webkit-transition-delay: 0.7s;
+          transition-delay: 0.7s;
+}
+
+.carousel__wrapper .owl-item.active .certificate__wrapper img:nth-of-type(5) {
+  -webkit-transition-delay: 0.8s;
+          transition-delay: 0.8s;
+}
+
+.carousel__wrapper .owl-item.active .certificate__wrapper img:nth-of-type(6) {
+  -webkit-transition-delay: 0.9s;
+          transition-delay: 0.9s;
+}
+
+.carousel__wrapper .owl-nav button {
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  outline: none;
+}
+
+.carousel__wrapper .owl-nav button.owl-prev {
+  left: 20px;
+}
+
+.carousel__wrapper .owl-nav button.owl-next {
+  right: 20px;
+}
+
+.carousel__wrapper .owl-nav button span {
+  color: white;
+  font-size: 80px;
+}
+
+.carousel__wrapper .owl-dots {
+  display: none;
+}
+
+.header {
+  width: 1280px;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+}
+
+.header__top {
+  text-align: right;
+  margin: 10px 0;
+}
+
+.header__bottom {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.header .social-media li {
+  display: inline-block;
+}
+
+.header .social-media a {
+  margin: 0 10px;
+  font-size: 18px;
+  color: yellow;
+}
+
+.header .social-media a:hover {
+  color: orange;
+}
+
+.header .logo {
+  width: 360px;
+  padding-left: 30px;
+}
+
+.header .logo a {
+  display: inline-block;
+  text-decoration: none;
+}
+
+.header .logo h1 {
+  margin: 0;
+  font-size: 36px;
+  text-transform: uppercase;
+  font-weight: bolder;
+  color: gray;
+  font-style: italic;
+}
+
+.header .navigation {
+  position: relative;
+  width: calc(100% - 360px);
+}
+
+.header .navigation > ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  height: 100%;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.header .navigation li {
+  margin: 0 10px;
+}
+
+.header .navigation li ul {
+  display: none;
+}
+
+.header .navigation a {
+  font-size: 18px;
+  text-decoration: none;
+  color: #222222;
+}
+
+.header .navigation a:hover {
+  color: white;
+}
+
+.header .navigation::after {
+  display: block;
+  position: absolute;
+  width: 1280px;
+  height: 100%;
+  left: -38%;
+  top: 0;
+  background-color: orange;
+  -webkit-transform: skew(-25deg);
+          transform: skew(-25deg);
+  z-index: -1;
+  content: '';
+}
+
+.footer {
+  width: 100%;
+  padding: 10px 20px 0;
+  color: white;
+  background: rgba(4, 30, 66, 0.8);
+}
+
+.footer__wrapper {
+  width: 1280px;
+  margin: 0 auto;
+}
+
+.footer__top {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding-bottom: 6px;
+}
+
+.footer .address {
+  position: relative;
+  padding-left: 30px;
+  font-size: 18px;
+}
+
+.footer .address i {
+  position: absolute;
+  top: 0;
+  left: 0;
+  color: orange;
+}
+
+.footer .address p {
+  margin: 0;
+}
+
+.footer .copyright {
+  padding: 8px 0;
+  text-align: center;
+  font-size: 13px;
+  border-top: 1px solid white;
+}
+
+.main {
+  position: absolute;
+  background-color: rgba(203, 230, 206, 0.76);
+  width: 100%;
+}
+
+.main_inner {
+  width: 80%;
+  margin: 0 auto;
+  background-color: white;
+}
+
+.main_first {
+  margin-top: 110px;
+  background-image: url("../images2/02 Cevovod od izlazne gradj. ka cvoru 2.jpg");
+  background-size: cover;
+  text-align: center;
+  width: 100%;
+  height: 40vh;
+}
+
+.main_first p {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  height: 100%;
+  text-transform: uppercase;
+  font-size: 55px;
+  color: orange;
+  font-weight: 900;
+  letter-spacing: 5px;
+  font-style: unset;
+}
+/*# sourceMappingURL=main.css.map */

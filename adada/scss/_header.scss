@@ -22,16 +22,17 @@
     a {
       margin: 0 10px;
       font-size: 18px;
-      color: white;
+      color: yellow;
 
       &:hover {
-        color: $blueColor;
+        color: orange;
       }
     }
   }
 
   .logo {
     width: $logoWidth;
+    padding-left: 30px;
 
     a {
       display: inline-block;
@@ -42,8 +43,9 @@
       margin: 0;
       font-size: 36px;
       text-transform: uppercase;
-      font-weight: 100;
-      color: white;
+      font-weight: bolder;
+      color: gray;
+      font-style: italic;
     }
   }
 
@@ -60,7 +62,7 @@
     }
 
     li {
-      margin: 0 15px;
+      margin: 0 10px;
 
       // Second level navigation
       ul {
@@ -69,7 +71,7 @@
     }
 
     a {
-      font-size: 20px;
+      font-size: 18px;
       text-decoration: none;
       color: $blackColor;
 
@@ -81,11 +83,11 @@
     &::after {
       display: block;
       position: absolute;
-      width: 9999px;
+      width: 1280px;
       height: 100%;
-      left: 0;
+      left: -38%;
       top: 0;
-      background-color: $yellowColor;
+      background-color: orange;
       transform: skew(-25deg);
       z-index: -1;
       content: '';
