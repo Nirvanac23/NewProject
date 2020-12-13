@@ -1,20 +1,20 @@
-.main{
-    position: absolute;
-    background-color: rgba(203, 230, 206, 0.76);
+.main {
     width: 100%;
-    &_inner{
-        width: 80%;
+    &_inner {
+        width: 100%;
         margin: 0 auto;
-        background-color: white;
+
+   
     }
-    &_first{
-        margin-top: 110px;
-        background-image: url("../images2/02 Cevovod od izlazne gradj. ka cvoru 2.jpg");
-        background-size: cover;
+    &_first {
+        background-image: url('http://walls-wp.themegum.com/wp-content/uploads/2017/07/slide-1-1.jpg');
+        object-fit: cover;
+        background-repeat: no-repeat;
+        background-position: 100% 30%;
         text-align: center;
         width: 100%;
-        height: 40vh;
-        p{
+        height: 50vh;
+        p {
             display: flex;
             align-items: center;
             justify-content: center;
@@ -27,4 +27,96 @@
             font-style: unset;
         }
     }
+    &_second {
+        .one {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 0 auto;
+            height: 60vh;
+      
+            div{
+                display: flex;
+                align-items: center;
+                width: 75%;
+                padding: 20px ;
+                height: auto;
+            }
+           
+            &-images {
+                display: flex;
+                align-items: center;
+                padding: 20px;
+                flex: 1;
+                figure {
+                    width: 100%;
+                    height: 40vh;
+                    overflow: hidden;
+                    margin: 0;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    padding: 20px 40px;
+
+                }
+                img{
+                    width: 100%;
+                    height: 100%;
+                }
+            }
+            &-text {
+                padding: 20px;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                flex: 1;
+                height: auto;
+                h2 {
+                    text-transform: uppercase;
+                    position: relative;
+                    padding-bottom: 20px;
+                    color: black;
+                    width: max-content;
+                }
+                h2::after {
+                    display: flex;
+                    content: "";
+                    width: 80%;
+                    height: 2px;
+                    background-color: orange;
+                    position: absolute;
+                    left: 50%;
+                    transform: translate(-50%);
+                  
+                    position: absolute;
+                    margin-top: 4px;
+                }
+                p {
+                    text-align: left;
+                }
+            }
+            #ord {
+                order: 2;
+         
+            }
+            #ord-c {
+                order: 1;
+            }
+        }
+        &:nth-of-type(1){
+            background-color:rgba(247, 247, 247, 0.774);
+        }
+        &:nth-of-type(3){
+            background-color:rgba(247, 247, 247, 0.774);
+        }
+        &:nth-of-type(5){
+            background-color:rgba(247, 247, 247, 0.774);
+        }
+    }
+}
+#imgCh{
+    background-image: url(../images/imag11.jpg);
+    background-size: cover;
+    background-position: center;
 }

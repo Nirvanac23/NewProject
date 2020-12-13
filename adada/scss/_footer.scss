@@ -12,25 +12,35 @@
 
   &__top {
     display: flex;
-    justify-content: space-between;
+    
+    align-items: center;
     padding-bottom: 6px;
   }
 
   .address {
-    position: relative;
-    padding-left: 30px;
+    display: flex;
+    align-items: center;
+   justify-content: center;
+    width: 100%;
     font-size: 18px;
+    text-align: center;
 
     i {
-      position: absolute;
-      top: 0;
-      left: 0;
-      color: orange;
+     color: orange;
+     padding: 0 10px;
     }
 
     p {
       margin: 0;
     }
+  }
+  .address:nth-of-type(1){
+    display: flex;
+    justify-content: flex-start;
+  }
+  .address:nth-of-type(3){
+    display: flex;
+    justify-content: flex-end;
   }
 
   .copyright {
@@ -39,4 +49,8 @@
     font-size: 13px;
     border-top: 1px solid white;
   }
+}
+#chage-footer{
+  position: relative;
+  
 }
