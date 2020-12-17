@@ -1,0 +1,56 @@
+// Footer section
+.footer {
+  width: 100%;
+  padding: 10px 20px 0;
+  color: white;
+  background: rgba(4, 30, 66, 0.8);
+
+  &__wrapper {
+    width: 1280px;
+    margin: 0 auto;
+  }
+
+  &__top {
+    display: flex;
+    
+    align-items: center;
+    padding-bottom: 6px;
+  }
+
+  .address {
+    display: flex;
+    align-items: center;
+   justify-content: center;
+    width: 100%;
+    font-size: 16px;
+    text-align: center;
+
+    i {
+     color: orange;
+     padding: 0 10px;
+    }
+
+    p {
+      margin: 0;
+    }
+  }
+  .address:nth-of-type(1){
+    display: flex;
+    justify-content: flex-start;
+  }
+  .address:nth-of-type(3){
+    display: flex;
+    justify-content: flex-end;
+  }
+
+  .copyright {
+    padding: 8px 0;
+    text-align: center;
+    font-size: 13px;
+    border-top: 1px solid white;
+  }
+}
+#chage-footer{
+  position: relative;
+  
+}
