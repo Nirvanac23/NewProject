@@ -47,20 +47,10 @@
 
   .logo {
     width: $logoWidth;
-
-
-    a {
-      display: inline-block;
-      text-decoration: none;
-    }
-
-    h1 {
-      margin: 0;
-      font-size: 36px;
-      text-transform: uppercase;
-      font-weight: bolder;
-      color: gray;
-      font-style: italic;
+    display: flex;
+    align-items: flex-end;
+    img{
+      height: 50px;
     }
   }
 
