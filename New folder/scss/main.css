@@ -519,8 +519,7 @@ img {
 }
 
 .main_second {
-  margin-top: 20px;
-  z-index: 9999;
+  position: relative;
 }
 
 .main_second .one {
@@ -534,7 +533,7 @@ img {
       -ms-flex-align: center;
           align-items: center;
   margin: 0 auto;
-  height: 60vh;
+  height: auto;
 }
 
 .main_second .one div {

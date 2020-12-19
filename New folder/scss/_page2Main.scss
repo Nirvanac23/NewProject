@@ -54,14 +54,15 @@
         }
     }
     &_second {
-        margin-top: 20px;
-        z-index: 9999;
+       
+        position: relative;
+        
         .one {
             display: flex;
             justify-content: center;
             align-items: center;
             margin: 0 auto;
-            height: 60vh;
+            height: auto;
 
             div {
                 display: flex;
@@ -177,3 +178,6 @@
     background-position: center;
     position: relative;
 }
+
+
+
