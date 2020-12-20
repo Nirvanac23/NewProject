@@ -448,6 +448,119 @@ img {
   position: relative;
 }
 
+@media screen and (max-width: 1366px) {
+  .main_second .one div {
+    width: 100% !important;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  header .header__bottom {
+    display: block;
+  }
+  header .header__bottom .logo {
+    width: 100%;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  header .header__bottom .navigation {
+    width: 100%;
+  }
+  header .header__bottom::after {
+    height: 75%;
+    top: 25%;
+  }
+  .main_second .one div {
+    width: 100% !important;
+    display: block !important;
+  }
+  .main_second .one div .one-text h2 {
+    width: auto;
+    text-align: center;
+  }
+  .main_second .one div .one-text h2:after {
+    width: 40%;
+  }
+  .main_second .one div .one-images img {
+    width: 70%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  header {
+    max-width: none !important;
+  }
+  header .header__bottom {
+    display: block;
+  }
+  header .header__bottom .logo {
+    width: 100%;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  header .header__bottom .navigation {
+    width: 100%;
+  }
+  header .header__bottom::after {
+    height: 75%;
+    top: 25%;
+    -webkit-transform: skew(0deg);
+            transform: skew(0deg);
+  }
+  .main_second .one div {
+    width: 100% !important;
+    display: block !important;
+  }
+  .main_second .one div .one-text h2 {
+    width: auto;
+    text-align: center;
+  }
+  .main_second .one div .one-text h2:after {
+    width: 40%;
+  }
+  .main_second .one div .one-images img {
+    height: 30vh;
+  }
+}
+
+@media screen and (max-width: 707px) {
+  header {
+    max-width: none !important;
+  }
+  header .header__bottom {
+    display: block;
+  }
+  header .header__bottom .logo {
+    width: 100%;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  header .header__bottom .navigation {
+    width: 100%;
+  }
+  header .header__bottom .navigation ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    padding: 0;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  header .header__bottom .navigation ul li a {
+    font-size: 14px;
+  }
+  header .header__bottom::after {
+    height: 75%;
+    top: 25%;
+    -webkit-transform: skew(0deg);
+            transform: skew(0deg);
+  }
+}
+
 .main {
   width: 100%;
 }

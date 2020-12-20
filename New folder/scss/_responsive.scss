@@ -1,4 +1,128 @@
-@media screen and (max-width: 1200px) {}
-@media screen and (max-width: 1200px) {}
-@media screen and (max-width: 1200px) {}
-@media screen and (max-width: 1200px) {}
+@media screen and (max-width: 1366px) {
+    .main_second {
+        .one {
+            div {
+                width: 100% !important;
+            }
+        }
+    }
+}
+@media screen and (max-width: 992px) {
+    header {
+        .header {
+            &__bottom {
+                display: block;
+                .logo {
+                    width: 100%;
+                    justify-content: center;
+                }
+                .navigation {
+                    width: 100%;
+                }
+            }
+            &__bottom::after {
+                height: 75%;
+                top: 25%;
+            }
+        }
+    }
+    .main_second {
+        .one {
+            div {
+                width: 100% !important; //Zasto???
+                display: block !important; //Zasto???
+                .one-text {
+                    h2 {
+                        width: auto;
+                        text-align: center;
+                    }
+                    h2:after {
+                        width: 40%;
+                    }
+                }
+                .one-images {
+                    img {
+                        width: 70%;
+                    }
+                }
+            }
+        }
+    }
+}
+@media screen and (max-width: 768px) {
+    header {
+        max-width: none !important; //Zasto???
+
+        .header {
+            &__bottom {
+                display: block;
+                .logo {
+                    width: 100%;
+                    justify-content: center;
+                }
+                .navigation {
+                    width: 100%;
+                }
+            }
+            &__bottom::after {
+                height: 75%;
+                top: 25%;
+                transform: skew(0deg);
+            }
+        }
+    }
+    .main_second {
+        .one {
+            div {
+                width: 100% !important; //Zasto???
+                display: block !important; //Zasto???
+                .one-text {
+                    h2 {
+                        width: auto;
+                        text-align: center;
+                    }
+                    h2:after {
+                        width: 40%;
+                    }
+                }
+                .one-images {
+                    img {
+                        height: 30vh;
+                    }
+                }
+            }
+        }
+    }
+}
+@media screen and (max-width: 707px) {
+    header {
+        max-width: none !important;
+        .header {
+            &__bottom {
+                display: block;
+                .logo {
+                    width: 100%;
+                    justify-content: center;
+                }
+                .navigation {
+                    width: 100%;
+                    ul {
+                        display: flex;
+                        padding: 0;
+                        justify-content: center;
+                        li {
+                            a {
+                                font-size: 14px;
+                            }
+                        }
+                    }
+                }
+            }
+            &__bottom::after {
+                height: 75%;
+                top: 25%;
+                transform: skew(0deg);
+            }
+        }
+    }
+}
