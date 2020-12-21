@@ -54,9 +54,8 @@
         }
     }
     &_second {
-       
         position: relative;
-        
+
         .one {
             display: flex;
             justify-content: center;
@@ -178,6 +177,12 @@
     background-position: center;
     position: relative;
 }
-
-
-
+#imgCh5 {
+    background-image: url(../images/pexels-yury-kim-585419.jpg);
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+#mediaq{
+    display: none;
+}
