@@ -7,6 +7,7 @@ html,
 body {
   padding: 0;
   margin: 0;
+  font-family: 'Open Sans';
 }
 
 ul {
@@ -15,7 +16,8 @@ ul {
   list-style-type: none;
 }
 
-a, button {
+a,
+button {
   transition: all 0.3s ease;
 }
 
@@ -80,6 +82,31 @@ img {
     }
   }
 }
-.mobile{
+.mobile {
   display: none;
+}
+
+// Lightbox
+.lightbox {
+  position: fixed;
+  width: 800px;
+  max-width: calc(100% - 30px);
+  overflow: hidden;
+  top: calc(50% + 30px) !important;
+  left: 50% !important;
+  transform: translate(-50%, -50%);
+
+  > * {
+    width: 100% !important;
+    height: auto !important;
+  }
+
+  .lb-image {
+    width: 100% !important;
+    height: auto !important;
+  }
+}
+
+.image-gallery {
+  display: none !important;
 }

@@ -6,7 +6,7 @@
 
   &__top {
     text-align: right;
-    margin: 10px 0;
+    margin: 10px 0 0;
   }
 
   &__bottom {
@@ -19,10 +19,11 @@
       position: absolute;
       width: 100%;
       height: 50%;
-      left: 0%;
-      top: 50%;
-      background-color:rgba(orange, 0.8);
-      transform: skew(-25deg);
+      left: 50%;
+      top: 35px;
+      background-color:rgba(orange, 0.9);
+      transform: skew(-25deg) translateX(-50%);
+      transition: top 0.3s ease, height 0.3s ease, width 0.6s ease 0.3s;
       z-index: -1;
       content: '';
     }
@@ -50,7 +51,7 @@
     display: flex;
     align-items: flex-end;
     img{
-      height: 50px;
+      height: 46px;
     }
   }
 
@@ -69,7 +70,6 @@
 
     li {
       margin: 0 10px;
-
     }
 
     a {
@@ -78,7 +78,7 @@
       color: $blackColor;
       font-weight: 600;
 
-      &:hover {
+      &:hover, &.active {
         color: white;
       }
     }
@@ -88,4 +88,21 @@
 }
 #change{
   position: fixed;
+
+  &.is-scrolled {
+    
+    .header__bottom::after {
+      width: calc(100vw + 30px);
+      height: 100%;
+      top: 0;
+    }
+
+    .social-media a {
+      color: white;
+
+      &:hover {
+        color: white;
+      }
+    }
+  }
 }

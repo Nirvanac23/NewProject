@@ -1,8 +1,12 @@
-// Owl caorusel
-$('.owl-carousel').owlCarousel({
-  loop: true,
-  margin: 0,
-  nav: true,
-  items: 1,
-  smartSpeed: 1000
-});
+// Header
+window.onscroll = function () {
+  scrollFunction();
+};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 0 || document.documentElement.scrollTop > 0) {
+    document.getElementById('change').classList.add('is-scrolled');
+  } else {
+    document.getElementById('change').classList.remove('is-scrolled');
+  }
+}
