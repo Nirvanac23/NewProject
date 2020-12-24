@@ -3,6 +3,7 @@
   width: 1280px;
   left: 50%;
   transform: translateX(-50%);
+  
 
   &__top {
     text-align: right;
@@ -26,6 +27,7 @@
       transition: top 0.3s ease, height 0.3s ease, width 0.6s ease 0.3s;
       z-index: -1;
       content: '';
+      
     }
   }
 
@@ -49,7 +51,7 @@
   .logo {
     width: $logoWidth;
     display: flex;
-    align-items: flex-end;
+    align-items: center;
     img{
       height: 46px;
     }
@@ -62,7 +64,7 @@
     // First level navigation
     > ul {
       display: flex;
-      justify-content: flex-end;
+      justify-content: center;
       height: 100%;
       align-items: center;
       white-space: nowrap;
@@ -95,6 +97,8 @@
       width: calc(100vw + 30px);
       height: 100%;
       top: 0;
+      
+    
     }
 
     .social-media a {
