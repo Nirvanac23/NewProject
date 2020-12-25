@@ -1,9 +1,11 @@
 @media screen and (max-width: 1366px) {
     .header {
+        width: 920px;
         max-width: 100%;
         &__bottom {
             max-width: 100%;
             .navigation {
+                width: 100%;
                 ul {
                     li {
                         a {
@@ -31,7 +33,7 @@
 }
 @media screen and (max-width: 992px) {
     .header{
-        max-width: 100%;
+       width: 100%;
         &__top{
             justify-content: center;
             display: flex;
@@ -39,13 +41,13 @@
         &__bottom{
            padding: 0;
             .logo{
-                width: 30%;
+               
                 display: flex;
                 justify-content: center;
             }
             .navigation{
-                width: 70%;
-                max-width: 100%;
+               
+                
                 display: flex;
                 justify-content: center;
                 ul{

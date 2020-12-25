@@ -497,10 +497,14 @@ img {
 
 @media screen and (max-width: 1366px) {
   .header {
+    width: 920px;
     max-width: 100%;
   }
   .header__bottom {
     max-width: 100%;
+  }
+  .header__bottom .navigation {
+    width: 100%;
   }
   .header__bottom .navigation ul li a {
     font-size: 16px;
@@ -515,7 +519,7 @@ img {
 
 @media screen and (max-width: 992px) {
   .header {
-    max-width: 100%;
+    width: 100%;
   }
   .header__top {
     -webkit-box-pack: center;
@@ -529,7 +533,6 @@ img {
     padding: 0;
   }
   .header__bottom .logo {
-    width: 30%;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -538,8 +541,6 @@ img {
             justify-content: center;
   }
   .header__bottom .navigation {
-    width: 70%;
-    max-width: 100%;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
